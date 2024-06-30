@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyC9h1ff1qlI2QIHj-xPBnw2TTF59_-umAo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>35179312839</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.fitnessTrackerApp</string>
+	<key>PROJECT_ID</key>
+	<string>my-fitness-tracker-ddd68</string>
+	<key>STORAGE_BUCKET</key>
+	<string>my-fitness-tracker-ddd68.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:35179312839:ios:190bc5a4056b49cfd970e2</string>
+</dict>
+</plist>
