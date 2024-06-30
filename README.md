@@ -10,7 +10,7 @@ flutter run
 ```
 
 ## Pages
-Splash Screen - Welcome page that shows up when spinning up initially
-Home Page - Home page that user can go to either login or signup page
-Login Page - Login Page where user can log in
-SignUp Page - SignUp Page where user can sign up
+Splash Screen - Welcome page that shows up when spinning up initially<br>
+Home Page - Home page that user can go to either login or signup page<br>
+Login Page - Login Page where user can log in<br>
+SignUp Page - SignUp Page where user can sign up<br>
