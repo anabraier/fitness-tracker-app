@@ -113,8 +113,10 @@ class _HomeScreenState extends State<HomeScreen> {
           padding: const EdgeInsets.only(top: 50.0),
             child: Column(
               children: [
-                Text("Active Fanatics", 
-                style: textStyle(45, Colors.black, FontWeight.w600),
+                const SizedBox(
+                  width: 200,
+                  height: 300,
+                  child: Card(child: Text('Active Fanatics'))
                 ),
                 SizedBox(
                   height: 15
