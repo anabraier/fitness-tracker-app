@@ -30,11 +30,15 @@ class _SignUpPageState extends State<SignUpPage> {
     super.dispose();
   }
 
-  @override
+   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("SignUp"),
+        backgroundColor: Color.fromARGB(214, 208, 203, 203), // Set the background color of the AppBar to grey
+        title: const Text(
+          "Welcome ",
+          style: TextStyle(color: Colors.black), // Set the text color to black for better contrast
+        ),
       ),
       body: Center(
         child: Padding(
@@ -84,7 +88,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   width: double.infinity,
                   height: 45,
                   decoration: BoxDecoration(
-                    color: Colors.blue,
+                    color: const Color.fromARGB(255, 33, 243, 128),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Center(
@@ -123,7 +127,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     child: const Text(
                       "Login",
                       style: TextStyle(
-                        color: Colors.blue,
+                        color: Color.fromARGB(255, 33, 243, 128),
                         fontWeight: FontWeight.bold,
                       ),
                     ),
