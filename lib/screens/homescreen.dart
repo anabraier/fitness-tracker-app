@@ -124,7 +124,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child:
                     Row(
                       children: [
-                        buildTab("Alarms")
+                        buildTab("Welcome to the Application 😊")
                       ],
                     ),
                 ),
@@ -132,7 +132,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   padding: const EdgeInsets.only(left:20, right: 20,),
                   child: 
                     ListView.builder(
-                    itemCount: 3,
+                    itemCount: 1,
                     shrinkWrap: true,
                     physics: NeverScrollableScrollPhysics(),
                     itemBuilder: (context, index) {
@@ -152,11 +152,10 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                           title: 
                             Text(
-                              "Alarm", 
+                              "Steps Go Here", 
                               style: 
                                 textStyle(27, Colors.black, FontWeight.w600),
                             ),
-                          trailing: Icon(Icons.delete, color: Colors.redAccent, size: 28)
                           ),
                         )
                       );
@@ -171,6 +170,15 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Text("Workouts"),
               ),
             ),
+              Align(
+                alignment: Alignment.bottomRight,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/alarms');
+                  },
+                  child: Text("Create Alarm"),
+                ),
+              ),
               ],
             ),
           ),
