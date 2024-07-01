@@ -28,11 +28,15 @@ class _LoginPageState extends State<LoginPage> {
     super.dispose();
   }
 
-  @override
+   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Login"),
+        backgroundColor: Color.fromARGB(214, 208, 203, 203), // Set the background color of the AppBar to grey
+        title: const Text(
+          "Welcome to your Fitness App",
+          style: TextStyle(color: Colors.black), // Set the text color to black for better contrast
+        ),
       ),
       body: Center(
         child: Padding(
@@ -74,7 +78,7 @@ class _LoginPageState extends State<LoginPage> {
                   width: double.infinity,
                   height: 45,
                   decoration: BoxDecoration(
-                    color: Colors.blue,
+                    color: const Color.fromARGB(255, 33, 243, 128),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Center(
@@ -115,7 +119,7 @@ class _LoginPageState extends State<LoginPage> {
                     child: const Text(
                       "Sign Up",
                       style: TextStyle(
-                        color: Colors.blue,
+                        color: Color.fromARGB(255, 33, 243, 128),
                         fontWeight: FontWeight.bold,
                       ),
                     ),
