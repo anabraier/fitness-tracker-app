@@ -99,7 +99,7 @@ class _HomeScreenState extends State<HomeScreen> {
       floatingActionButton: Chip(
         backgroundColor: Colors.redAccent,
         onDeleted: () => openAddDialog(context),
-        deleteIcon: Icon(Icons.add, color: Colors.white, size: 26),
+        deleteIcon: Icon(Icons.access_alarm, color: Colors.white, size: 26),
           label: 
             Text(
               "Add", 
@@ -124,9 +124,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child:
                     Row(
                       children: [
-                        buildTab("Calories"),
-                        buildTab("Steps"),
-                        buildTab("Add Alarm")
+                        buildTab("Alarms")
                       ],
                     ),
                 ),
@@ -163,7 +161,16 @@ class _HomeScreenState extends State<HomeScreen> {
                         )
                       );
                   })
-                )
+                ),
+              Align(
+              alignment: Alignment.bottomLeft,
+              child: ElevatedButton(
+                onPressed: () {
+                  // Add your button logic here
+                },
+                child: Text("New Button"),
+              ),
+            ),
               ],
             ),
           ),
