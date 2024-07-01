@@ -3,11 +3,15 @@ import 'package:fitness_tracker_app/features/app/splash_screen/splash_screen.dar
 import 'package:fitness_tracker_app/features/user_auth/presentation/pages/home_page.dart';
 import 'package:fitness_tracker_app/features/user_auth/presentation/pages/login_page.dart';
 import 'package:fitness_tracker_app/features/user_auth/presentation/pages/sign_up_page.dart';
+import 'package:fitness_tracker_app/screens/Add_Alarm.dart';
+import 'package:fitness_tracker_app/screens/Alarm_page.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'firebase_options.dart';
 import 'package:fitness_tracker_app/screens/homescreen.dart';
 import 'package:fitness_tracker_app/screens/workouts.dart';
+import 'package:fitness_tracker_app/screens/Add_Alarm.dart';
+
 
 
 Future main() async {
@@ -45,7 +49,8 @@ class MyApp extends StatelessWidget {
         '/login': (context) => const LoginPage(),
         '/signUp': (context) => const SignUpPage(),
         '/home': (context) => HomeScreen(),
-        '/workouts': (context) => TextFormFieldsDisplay()
+        '/workouts': (context) => TextFormFieldsDisplay(),
+        '/alarms': (context) => AlarmSettingScreen()
       },
     );
   }
