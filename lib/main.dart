@@ -6,7 +6,7 @@ import 'package:fitness_tracker_app/features/user_auth/presentation/pages/sign_u
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'firebase_options.dart';
-
+import 'package:fitness_tracker_app/screens/homescreen.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -42,8 +42,20 @@ class MyApp extends StatelessWidget {
             ),
         '/login': (context) => const LoginPage(),
         '/signUp': (context) => const SignUpPage(),
-        '/home': (context) => const HomePage(),
+        '/home': (context) => HomeScreen(),
       },
     );
   }
 }
+
+
+
+  // @override
+  //   // TODO: implement ==
+  //   Widget build(BuildContext context) {
+  //     return MaterialApp(
+  //       debugShowCheckedModeBanner: false,
+  //       home: HomeScreen(),
+  //     );
+  //   }
+  
