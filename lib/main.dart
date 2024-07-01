@@ -7,6 +7,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'firebase_options.dart';
 import 'package:fitness_tracker_app/screens/homescreen.dart';
+import 'package:fitness_tracker_app/screens/workouts.dart';
+
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -43,6 +45,7 @@ class MyApp extends StatelessWidget {
         '/login': (context) => const LoginPage(),
         '/signUp': (context) => const SignUpPage(),
         '/home': (context) => HomeScreen(),
+        '/workouts': (context) => TextFormFieldsDisplay()
       },
     );
   }

@@ -146,13 +146,13 @@ class _HomeScreenState extends State<HomeScreen> {
                           child: ListTile(
                             leading: Image(
                               image: AssetImage('images/fire.png'),
-                              width: 50,
-                              height: 50,
+                              width: 25,
+                              height: 25,
                               fit: BoxFit.cover,
                             ),
                           title: 
                             Text(
-                              "Placeholder Alarm", 
+                              "Alarm", 
                               style: 
                                 textStyle(27, Colors.black, FontWeight.w600),
                             ),
@@ -166,9 +166,9 @@ class _HomeScreenState extends State<HomeScreen> {
               alignment: Alignment.bottomLeft,
               child: ElevatedButton(
                 onPressed: () {
-                  // Add your button logic here
+                  Navigator.pushNamed(context, '/workouts');
                 },
-                child: Text("New Button"),
+                child: Text("Workouts"),
               ),
             ),
               ],
