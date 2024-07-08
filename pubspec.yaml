@@ -45,7 +45,7 @@ dependencies:
   sqflite:
   path_provider:
 
-  flutter_alarm_clock: ^0.0.1
+  flutter_alarm_clock: ^0.1.1
   flutter_local_notifications: ^17.2.1
   android_alarm_manager_plus: ^2.0.6
   provider:
